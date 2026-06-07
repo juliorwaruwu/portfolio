@@ -1,0 +1,209 @@
+/* =========================
+   LARGE LAPTOP
+========================= */
+
+@media (max-width:1200px){
+
+    .hero h1{
+        font-size:4rem;
+    }
+
+    .section{
+        padding:100px 7%;
+    }
+
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width:992px){
+
+    .navbar{
+        width:95%;
+        padding:15px 20px;
+    }
+
+    .nav-links{
+        gap:20px;
+    }
+
+    .hero h1{
+        font-size:3.5rem;
+    }
+
+    .hero h2{
+        font-size:1.5rem;
+    }
+
+    .section-title{
+        font-size:2.5rem;
+    }
+
+    .about-card{
+        padding:30px;
+    }
+
+    .projects-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* =========================
+   MOBILE MENU PREP
+========================= */
+
+.menu-toggle{
+    display:none;
+
+    flex-direction:column;
+
+    cursor:pointer;
+
+    gap:5px;
+}
+
+.menu-toggle span{
+    width:25px;
+    height:3px;
+
+    background:white;
+
+    border-radius:5px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:768px){
+
+    .menu-toggle{
+        display:flex;
+    }
+
+    .nav-links{
+
+        position:absolute;
+
+        top:80px;
+        left:0;
+
+        width:100%;
+
+        background:
+        rgba(5,8,22,.98);
+
+        backdrop-filter:blur(20px);
+
+        flex-direction:column;
+
+        align-items:center;
+
+        padding:30px 0;
+
+        gap:25px;
+
+        border-radius:20px;
+
+        display:none;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .resume-btn{
+        display:none;
+    }
+
+    .hero{
+        padding:0 20px;
+    }
+
+    .hero h1{
+        font-size:2.8rem;
+    }
+
+    .hero h2{
+        font-size:1.2rem;
+    }
+
+    .hero-description{
+        font-size:.95rem;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+    }
+
+    .primary-btn,
+    .secondary-btn{
+        width:100%;
+    }
+
+    .stats{
+        flex-direction:column;
+        gap:25px;
+    }
+
+    .section-title{
+        font-size:2rem;
+    }
+
+    .skills-grid{
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+
+}
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width:576px){
+
+    .hero h1{
+        font-size:2.2rem;
+    }
+
+    .hero h2{
+        font-size:1rem;
+    }
+
+    .section{
+        padding:80px 5%;
+    }
+
+    .about-card{
+        padding:25px;
+    }
+
+    .project-card{
+        padding:25px;
+    }
+
+    .skills-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+/* =========================
+   VERY SMALL DEVICES
+========================= */
+
+@media (max-width:400px){
+
+    .hero h1{
+        font-size:1.8rem;
+    }
+
+    .hero-description{
+        font-size:.85rem;
+    }
+
+}
