@@ -33,9 +33,9 @@
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
     />
     <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-/>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
   </head>
 
   <body>
@@ -54,25 +54,31 @@
     <div id="bg"></div>
 
     <!-- NAVBAR -->
-
     <nav class="navbar">
-      <div class="logo">JW</div>
+      <div class="logo">Julior</div>
 
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
-
         <li><a href="#skills">Skills</a></li>
-
         <li><a href="#projects">Projects</a></li>
-
         <li><a href="#education">Education</a></li>
-
         <li><a href="#experience">Experience</a></li>
-
         <li><a href="#contact">Contact</a></li>
+
+        <!-- Resume hanya muncul di mobile -->
+        <li class="mobile-resume">
+          <a href="assets/cv/Julior-Waruwu-CV.pdf" download>
+            Download Resume
+          </a>
+        </li>
       </ul>
 
-      <a href="assets/cv/Julior-Waruwu-CV.pdf" class="resume-btn" download>
+      <!-- Resume desktop -->
+      <a
+        href="assets/cv/Julior-Waruwu-CV.pdf"
+        class="resume-btn desktop-resume"
+        download
+      >
         Resume
       </a>
 
@@ -82,7 +88,6 @@
         <span></span>
       </div>
     </nav>
-
     <!-- HERO -->
 
     <section class="hero">
@@ -96,6 +101,8 @@
         <p class="hero-description">
           Information Technology student passionate about building impactful
           applications, software systems, and modern digital experiences.
+          Focused on creating scalable, user-friendly solutions through
+          continuous learning and hands-on development.
         </p>
 
         <div class="hero-buttons">
@@ -115,12 +122,15 @@
         <p>
           Information Technology student at Jakarta International University
           with interests in Mobile Development, Web Development, Data Analytics,
-          and Modern Software Engineering.
+          and Modern Software Engineering. Dedicated to designing and developing
+          innovative digital solutions through modern technologies, with
+          experience in building academic and personal projects focused on
+          functionality, performance, and user experience.
         </p>
 
         <div class="stats">
           <div class="stat">
-            <h3>3</h3>
+            <h3>5</h3>
 
             <p>Projects</p>
           </div>
@@ -181,6 +191,41 @@
         <div class="skill-card glass">
           <i class="devicon-git-plain"></i><br />Git
         </div>
+        <div class="skill-card glass">
+          <i class="devicon-html5-plain"></i><br />HTML5
+        </div>
+
+        <div class="skill-card glass">
+          <i class="devicon-css3-plain"></i><br />CSS3
+        </div>
+
+        <div class="skill-card glass">
+          <i class="devicon-javascript-plain"></i><br />JavaScript
+        </div>
+
+        <div class="skill-card glass">
+          <i class="devicon-tailwindcss-original"></i><br />Tailwind CSS
+        </div>
+
+        <div class="skill-card glass">
+          <i class="devicon-thymeleaf-original"></i><br />Thymeleaf
+        </div>
+
+        <div class="skill-card glass">
+          <i class="devicon-github-original"></i><br />GitHub
+        </div>
+
+        <div class="skill-card glass">
+          <i class="devicon-figma-plain"></i><br />Figma
+        </div>
+
+        <div class="skill-card glass">
+          <i class="devicon-intellij-plain"></i><br />IntelliJ IDEA
+        </div>
+
+        <div class="skill-card glass">
+          <i class="devicon-vscode-plain"></i><br />VS Code
+        </div>
       </div>
     </section>
 
@@ -232,7 +277,7 @@
 
         <span> Flutter • Firebase </span>
 
-  <div class="project-link">Explore Project</div>
+        <div class="project-link">Explore Project</div>
       </a>
 
       <!-- STUDENT REGISTRATION -->
@@ -255,7 +300,7 @@
         </p>
 
         <span> Java • Spring Boot • MySQL </span>
-<div class="project-link">Explore Project</div>
+        <div class="project-link">Explore Project</div>
       </a>
 
       <!-- STUDIFIT -->
@@ -332,58 +377,146 @@
     </div>
 
     <!-- EDUCATION -->
+<section id="education" class="section">
+  <h2 class="section-title">Education</h2>
 
-    <section id="education" class="section">
-      <h2 class="section-title">Education</h2>
+  <div class="education-container">
 
-      <div class="experience-grid">
-        <div class="experience-card glass">
+    <div class="education-card glass">
+      <div class="education-header">
+        <div>
           <h3>Jakarta International University</h3>
-
           <h4>Bachelor of Information Technology</h4>
-
-          <p>2023 - Present</p>
-
-          <p>
-            Passionate about software engineering, mobile development, web
-            technologies, and modern application architecture.
-          </p>
         </div>
 
-        <div class="experience-card glass">
-          <h3>Academic Highlights</h3>
+        <span class="education-year">2023 - Present</span>
+      </div>
 
-          <h4>Key Achievements</h4>
+      <p class="education-description">
+        Pursuing a Bachelor's degree in Information Technology with a focus on
+        Software Engineering, Mobile Development, Web Technologies, Database
+        Systems, and Modern Application Development.
+      </p>
+    </div>
 
-          <p>
-            • Built multiple academic projects<br />
-            • Developed mobile & web applications<br />
-            • Experience working in team-based software projects<br />
-            • Learning modern development frameworks
-          </p>
+    <div class="education-card glass">
+      <h3>Academic Highlights</h3>
+
+      <div class="highlights-grid">
+        <div class="highlight-item">
+          <i class="fa-solid fa-code"></i>
+          <span>Built multiple academic and personal projects</span>
+        </div>
+
+        <div class="highlight-item">
+          <i class="fa-solid fa-mobile-screen"></i>
+          <span>Developed web and mobile applications</span>
+        </div>
+
+        <div class="highlight-item">
+          <i class="fa-solid fa-users"></i>
+          <span>Collaborated in team-based software projects</span>
+        </div>
+
+        <div class="highlight-item">
+          <i class="fa-solid fa-laptop-code"></i>
+          <span>Hands-on experience with modern frameworks</span>
         </div>
       </div>
-    </section>
+    </div>
+
+  </div>
+</section>
 
     <!-- EXPERIENCE -->
+ <section id="experience" class="section">
+  <h2 class="section-title">Experience & Leadership</h2>
 
-    <section id="experience" class="section">
-      <h2 class="section-title">Experience</h2>
+  <div class="experience-wrapper">
 
-      <div class="experience-grid">
-        <div class="experience-card glass">
-          <h3>University Projects</h3>
+    <!-- PATH -->
+    <div class="timeline-path">
 
-          <p>Developed mobile and web applications as academic projects.</p>
-        </div>
+      <div class="path-node"></div>
 
-        <div class="experience-card glass">
-          <h3>Team Collaboration</h3>
+      <div class="path-segment horizontal"></div>
+      <div class="path-segment vertical"></div>
 
-          <p>Worked with teams in software development projects.</p>
-        </div>
+      <div class="path-node"></div>
+
+      <div class="path-segment horizontal reverse"></div>
+      <div class="path-segment vertical"></div>
+
+      <div class="path-node"></div>
+
+    </div>
+
+    <!-- EXPERIENCES -->
+<section id="experience" class="section">
+  <h2 class="section-title">Experience & Leadership</h2>
+
+  <div class="experience-timeline">
+
+    <div class="experience-item">
+      <div class="experience-marker">
+        <div class="marker-dot"></div>
       </div>
-    </section>
+
+      <div class="experience-card glass">
+        <span class="experience-year">2026 - Present</span>
+
+        <h3>Dormitory Person in Charge (PIC)</h3>
+
+        <h4>Jakarta International University</h4>
+
+        <p>
+          Responsible for coordinating dormitory activities, assisting
+          residents, and ensuring smooth communication between students and
+          university management.
+        </p>
+      </div>
+    </div>
+
+    <div class="experience-item">
+      <div class="experience-marker">
+        <div class="marker-dot"></div>
+      </div>
+
+      <div class="experience-card glass">
+        <span class="experience-year">2025 - Present</span>
+
+        <h3>Head of Volleyball Club</h3>
+
+        <h4>Jakarta International University</h4>
+
+        <p>
+          Leading club activities, coordinating events, and managing team
+          development while strengthening leadership and organizational skills.
+        </p>
+      </div>
+    </div>
+
+    <div class="experience-item">
+      <div class="experience-marker">
+        <div class="marker-dot"></div>
+      </div>
+
+      <div class="experience-card glass">
+        <span class="experience-year">2024 - Present</span>
+
+        <h3>Software Development Projects</h3>
+
+        <h4>Academic & Personal Projects</h4>
+
+        <p>
+          Developed full-stack web and mobile applications using Java,
+          Spring Boot, Flutter, React, MySQL, and modern development tools.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
 
     <!-- TIMELINE -->
 
@@ -425,100 +558,109 @@
     </section>
 
     <!-- CONTACT -->
-
     <section id="contact" class="contact section">
+      <div class="contact-header">
+        <span class="contact-badge">Get In Touch</span>
 
-    <h2 class="section-title">
-       Let's Build Something Together
-    </h2>
-
-    <div class="contact-container glass">
+        <h2 class="section-title">Let's Build Something Together</h2>
 
         <p class="contact-description">
-            Feel free to reach out for collaborations, opportunities, or just a friendly conversation.
+          Whether you have a project idea, internship opportunity, or simply
+          want to connect, I'd be happy to hear from you.
         </p>
+      </div>
 
-        <div class="contact-grid">
+      <div class="contact-grid">
+        <a href="mailto:juliorwaruwu7@gmail.com" class="contact-card">
+          <div class="contact-icon">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
 
-            <a href="mailto:juliorwaruwu7@gmail.com" class="contact-card">
+          <div>
+            <h4>Email</h4>
+            <span>juliorwaruwu7@gmail.com</span>
+          </div>
+        </a>
 
-                <i class="fa-solid fa-envelope"></i>
+        <a
+          href="https://github.com/juliorwaruwu"
+          target="_blank"
+          class="contact-card"
+        >
+          <div class="contact-icon">
+            <i class="fa-brands fa-github"></i>
+          </div>
 
-                <div>
-                    <h4>Email</h4>
-                    <span>juliorwaruwu7@gmail.com</span>
-                </div>
+          <div>
+            <h4>GitHub</h4>
+            <span>@juliorwru</span>
+          </div>
+        </a>
 
-            </a>
+        <a
+          href="https://www.linkedin.com/in/julior-waruwu-655a76403"
+          target="_blank"
+          class="contact-card"
+        >
+          <div class="contact-icon">
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
 
-            <a href="https://github.com/juliorwaruwu"
-               target="_blank"
-               class="contact-card">
+          <div>
+            <h4>LinkedIn</h4>
+            <span>Connect Professionally</span>
+          </div>
+        </a>
 
-                <i class="fa-brands fa-github"></i>
+        <a
+          href="https://www.instagram.com/juliorwru"
+          target="_blank"
+          class="contact-card"
+        >
+          <div class="contact-icon">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
 
-                <div>
-                    <h4>GitHub</h4>
-                    <span>@juliorwru</span>
-                </div>
+          <div>
+            <h4>Instagram</h4>
+            <span>@juliorwru</span>
+          </div>
+        </a>
 
-            </a>
+        <a
+          href="https://wa.me/6282271514570"
+          target="_blank"
+          class="contact-card"
+        >
+          <div class="contact-icon">
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
 
-            <a href="https://www.linkedin.com/in/julior-waruwu-655a76403"
-               target="_blank"
-               class="contact-card">
+          <div>
+            <h4>WhatsApp</h4>
+            <span>Chat Directly</span>
+          </div>
+        </a>
 
-                <i class="fa-brands fa-linkedin"></i>
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
 
-                <div>
-                    <h4>LinkedIn</h4>
-                    <span>Connect professionally</span>
-                </div>
-
-            </a>
-
-            <a href="https://www.instagram.com/juliorwru?igsh=MWwyd3owaHF5MDltZA=="
-               target="_blank"
-               class="contact-card">
-
-                <i class="fa-brands fa-instagram"></i>
-
-                <div>
-                    <h4>Instagram</h4>
-                    <span>@juliorwru</span>
-                </div>
-
-            </a>
-
-            <a href="https://wa.me/6282271514570"
-               target="_blank"
-               class="contact-card">
-
-                <i class="fa-brands fa-whatsapp"></i>
-
-                <div>
-                    <h4>WhatsApp</h4>
-                    <span>Chat directly</span>
-                </div>
-
-            </a>
-
-            <div class="contact-card location-card">
-
-                <i class="fa-solid fa-location-dot"></i>
-
-                <div>
-                    <h4>Location</h4>
-                    <span>Bekasi, Indonesia</span>
-                </div>
-
-            </div>
-
+          <div>
+            <h4>Location</h4>
+            <span>Bekasi, Indonesia</span>
+          </div>
         </div>
+      </div>
 
-    </div>
-
-</section>
+      <div class="contact-cta">
+        <a href="mailto:juliorwaruwu7@gmail.com" class="contact-btn">
+          Let's Talk
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </section>
 
     <!-- FOOTER -->
 
